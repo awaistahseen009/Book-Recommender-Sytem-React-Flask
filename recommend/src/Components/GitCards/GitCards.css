@@ -1,0 +1,101 @@
+html {
+    margin: 0;
+    margin-top: 0;
+    padding: 0;
+    height: 100vh;
+    /* width: 100vw; */
+    overflow-x: hidden;
+    font-size: 62.5%; /* 1rem = 10px */
+  }
+  
+  .card-section-git {
+    background-color: cornsilk;
+    color: #f8f9fa;
+    width: 30rem;
+    height: 36rem;
+    border-radius: 1.4rem;
+    overflow: hidden;
+    margin-top: 2rem;
+    margin-left: 3rem;
+    cursor: pointer;
+    background: #373B44;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    box-shadow: 7px 5px 10px rgba(255,255,255,.3);    
+  }
+  .text {
+    display: grid;
+    place-items: center;
+    padding: 0  4rem;
+  }
+.text-text{
+    font-size: 1.5rem;
+    height: 20rem;
+}
+  .title-project {
+    font-family: "Quicksand", sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  
+  .visit-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    margin-top: 1.5rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    background: linear-gradient(45deg, #3498db, #2980b9);
+    color: white;
+    border-radius: 0.5rem;
+    transition: background 0.4s ease-in-out, border 0.4s ease-in-out; /* Added border transition */
+    border: 2px solid transparent; /* Initial transparent border */
+  }
+  
+  .visit-button:hover {
+    background: linear-gradient(45deg, #2980b9, #3498db);
+    border: 2px solid rgb(209, 206, 206); /* White border on hover */
+  }
+  
+  @media (max-width: 700px) {
+    .card-section-git {
+      background-color: cornsilk;
+      color: #f8f9fa;
+      width: 25rem;
+      height: 35rem;
+      border-radius: 1.4rem;
+      overflow: hidden;
+      cursor: pointer;
+      background: #373B44;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      box-shadow: 6px 5px 10px rgba(255,255,255,.2);    
+      /* padding: 0 ; */
+    }
+    .main-git {
+        display: grid;
+        grid-template-columns: 1fr;
+        place-items: center;
+        padding: 0;
+        padding-top: 1.8rem;
+        border-radius: 5px;
+        row-gap: 1.6rem;
+        padding-bottom: 8rem;
+        place-items: center;
+      }
+    
+    }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .main-git {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
+        padding: 0;
+        padding-top: 1.8rem;
+        border-radius: 5px;
+        row-gap: 1.6rem;
+        padding-bottom: 8rem;
+        place-items: center;
+      }
+    }

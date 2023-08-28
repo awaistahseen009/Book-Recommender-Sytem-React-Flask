@@ -1,0 +1,155 @@
+html {
+    margin: 0;
+    margin-top: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    font-size: 62.5%; /* 1rem = 10px */
+  }
+  
+  .card-section {
+    background-color: cornsilk;
+    color: #f8f9fa;
+    width: 28rem;
+    height: 52rem;
+    border-radius: 1.4rem;
+    overflow: hidden;
+    cursor: pointer;
+    background: #373B44;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    box-shadow: 8px 5px 10px rgba(255,255,255,.3);  
+    perspective: 1000px;  
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .card-section:hover {
+    /* Apply the 3D effect and shadow when hovered */
+    transform: rotateX(10deg) scale(1.05);
+    box-shadow: 10px 10px 20px rgba(255, 255, 255, 0.4);
+  }
+
+  .image {
+    overflow: hidden;
+    text-align: center;
+    padding-top: .8rem;
+  }
+  
+  .image > img {
+    width: 20rem; /* Set the container width to create a perfect square */
+    height: 25rem; /* Set the container height to match the width */
+    /* border-radius: 50%; */
+    object-fit: cover;
+    border-radius: 1.2rem;
+  }
+  
+  .text {
+    display: grid;
+    place-items: center;
+  }
+  
+  .title-book {
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+  
+  .visit-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    margin-top: 1.5rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    background: linear-gradient(45deg, #3498db, #2980b9);
+    color: white;
+    border-radius: 0.5rem;
+    transition: background 0.4s ease-in-out, border 0.4s ease-in-out; /* Added border transition */
+    border: 2px solid transparent; /* Initial transparent border */
+  }
+  
+  .visit-button:hover {
+    background: linear-gradient(45deg, #2980b9, #3498db);
+    border: 2px solid rgb(209, 206, 206); /* White border on hover */
+  }
+  
+  .author, .votes ,.rating {
+    font-size: 1.4rem;
+  }
+  .text-cards{
+    height: 18rem;
+    width:20rem;
+    display: grid;
+    place-items: center;
+    padding:0 4rem;
+  }
+  .after-text-cards{
+    font-size: 1.4rem;
+    height: 18rem;
+  }
+  .main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 0 5rem;
+    place-items: center;
+    padding-top: 1.8rem;
+    border-radius: 5px;
+    row-gap: 1.6rem;
+    padding-bottom: 8rem;
+  }
+  @media (max-width: 700px) {
+    .card-section {
+      background-color: cornsilk;
+      color: #f8f9fa;
+      width:25rem;
+      height: 52rem;
+      border-radius: 1.4rem;
+      overflow: hidden;
+      cursor: pointer;
+      background: #373B44;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      box-shadow: 6px 5px 10px rgba(255,255,255,.2);    
+    }
+    .main {
+      display: grid;
+      grid-template-columns: 1fr;
+      padding: 0 0rem;
+      place-items: center;
+      padding-top: 1.8rem;
+      border-radius: 5px;
+      row-gap: 1.6rem;
+      padding-bottom: 8rem;
+    }
+    .text-cards{
+      height: 18rem;
+      width:18rem;
+      display: grid;
+      place-items: center;
+      padding:0 4rem;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .main {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding: 0 5rem;
+      place-items: center;
+      padding-top: 1.8rem;
+      border-radius: 5px;
+      row-gap: 1.6rem;
+      padding-bottom: 8rem;
+    }
+    .card-section:hover {
+      /* Apply the 3D effect and shadow when hovered */
+      transform: none;
+      box-shadow: none;
+    }
+    .card-section{
+      /* Apply the 3D effect and shadow when hovered */
+      transform: none;
+      box-shadow: none;
+    }
+  }

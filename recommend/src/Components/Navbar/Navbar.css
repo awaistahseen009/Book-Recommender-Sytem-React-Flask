@@ -1,0 +1,241 @@
+html{ 
+    overflow-x: hidden;
+}
+.header{
+    font-family: "Inter",sans-serif;
+    width: 60%;
+    margin: auto;
+    padding-top: .7rem;
+}
+.navbar{
+    display: flex;
+    width: 100%;
+    border-radius: 1.2rem;
+    justify-content: space-between;
+    background-color: #e9ecef;
+    color: black;
+    padding: .4rem 1.4rem;
+    font-size: 1.6rem;
+}
+.info {
+    display: flex;
+    gap: 0.6rem;
+}
+.info > li{
+    list-style: none;
+    padding: .2rem .4rem;
+    display: grid;
+    place-items: center;
+}
+.info > li > a{
+    padding: .4rem .6rem;
+}
+.info > li > a:link{
+    text-decoration: none;
+    color: black;
+
+    display: grid;
+    place-items: center;
+    border-radius: 1.2rem;
+}
+.info > li > a:visited{
+    text-decoration: none;
+    color: black; 
+}
+.info > li:hover > a
+{
+
+    background-color: #f18383;
+    color: #f4f9fd;
+
+}
+
+.search-item {
+display: grid;
+place-items: center;
+    width: 50%; /* Set the search item to take 50% width */
+  }
+  
+  .search-bar {
+    width: 80%;
+    position: relative;
+    height: 3rem;
+    background-color: white;
+    border-radius: 1.2rem;
+  }
+  
+  form input {
+    width: 85%;
+    height: 80%;
+    border: none;
+    border-radius: 1.2rem;
+    padding: .2rem .8rem; /* Adjust padding for icon */
+    font-size: 1.4rem;
+    outline: none;
+    font-size: 1.6rem;
+  }
+  
+  .search-icon {
+    position: absolute;
+    top: 50%;
+    padding-right: .6rem;
+    right: 1rem; /* Adjust the position of the icon */
+    transform: translateY(-50%);
+    cursor: pointer;
+    /* display: grid; */
+    /* height: 100%; */
+  }
+  .dis-class{
+    display: none;
+    visibility: hidden;
+}
+.menu-icon{
+    display: none;
+    visibility: hidden;
+}
+.left-arrow{
+    display: grid;
+    place-items: center;
+    visibility: visible;
+    width: 5%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    /* height: 80%; */
+}
+.left-arrow:hover {
+    background-color: #f18383;
+    color: #f4f9fd;
+    margin: 0;
+    border-radius: 1.2rem;
+  }
+/* Add this within your existing media query */
+@media (max-width: 700px) {
+    .menu-icon {
+      display: grid;
+      place-items: center;
+      font-size: 24px;
+      cursor: pointer;
+      visibility: visible;
+    }
+    nav{
+        position:relative;
+    }
+    .title{
+        font-size: 1.2rem;
+    }
+  
+    .menu-enable {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      /* top: 70%; */
+      bottom: -15rem;
+      left: 2%;
+      background-color: #e9ecef;
+      border-radius: 1.2rem;
+      width: inherit;
+      padding: .4rem 0.1rem;
+      z-index: 1;
+    }
+    .info.menu{
+        display: block;
+        padding: 0;
+        width: 100%;
+    }
+
+    .menu > li::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: #f18383; /* Set your desired underline color */
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+      }
+    .info > li {
+      padding: .2rem 0;
+      margin: 0;
+    }
+    .info > li > a {
+        padding: .4rem .6rem;
+        margin-bottom: 0.2rem; /* Add a margin to create a gap */
+        text-decoration: underline;
+        color: black;
+        display: grid;
+        place-items: center;
+        border-radius: 1.2rem;
+      }
+    .info > li:hover > a {
+      background-color: none;
+      color: none;
+      margin: 0;
+    }
+    .menu-main{
+        background-color: red;
+        width: 100vw;
+        height: 100%;
+    }
+    .menu-disable{
+        display: none;
+        visibility: hidden;
+        cursor: none;
+    }
+    .header{
+        font-family: "Inter",sans-serif;
+        width: 90%;
+        /* margin: auto; */
+        /* padding-top: .7rem; */
+        padding: .8rem 0;
+        /* margin: 0 .5rem; */
+        margin: 0 auto;
+        /* margin-left: 1r; */
+    }
+    .navbar{
+        display: flex;
+        width: 95%;
+        border-radius: 1.2rem;
+        justify-content: space-between;
+        background-color: #e9ecef;
+        color: black;
+        /* padding: .4rem 1.4rem; */
+        padding: 0 1.4rem;
+        font-size: 1.6rem;
+        gap: 1rem;
+    }
+    .title-short{
+        font-size: 1.2rem;
+    }
+    .search-bar{
+        width: 100%;
+    }
+    .search-bar input{
+        width: 80%;
+    }
+    .search-icon{
+        right: .2rem;
+    }
+    .left-arrow{
+        display: grid;
+        place-items: center;
+        visibility: visible;
+    }
+    .dis-class{
+        display: none;
+        visibility: hidden;
+    }
+    .info > li:hover > a
+{
+
+    background-color: none;
+    color: none;
+
+}
+.left-arrow:hover {
+    background-color: none;
+    color: none;
+    margin: 0;
+    border-radius: 1.2rem;
+  }
+  }
+  

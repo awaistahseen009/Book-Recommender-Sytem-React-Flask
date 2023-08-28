@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/react/css/main.da1f6f32.css",
+    "main.js": "/static/react/js/main.c4a9deee.js",
+    "js/787.40cde3c1.chunk.js": "/static/react/js/787.40cde3c1.chunk.js",
+    "media/DWO5Hzg.png": "/static/react/media/DWO5Hzg.00e1d0c955debae42729.png",
+    "../../templates/index.html": "/static/react/../../templates/index.html",
+    "main.da1f6f32.css.map": "/static/react/css/main.da1f6f32.css.map",
+    "main.c4a9deee.js.map": "/static/react/js/main.c4a9deee.js.map",
+    "787.40cde3c1.chunk.js.map": "/static/react/js/787.40cde3c1.chunk.js.map"
+  },
+  "entrypoints": [
+    "css/main.da1f6f32.css",
+    "js/main.c4a9deee.js"
+  ]
+}

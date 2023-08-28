@@ -1,0 +1,10 @@
+.wrapper{ 
+    display: grid;
+    place-items: center;
+}
+.image-error{
+    width: 50rem;
+}
+.info-error{
+    font-size: 2.4rem;
+}

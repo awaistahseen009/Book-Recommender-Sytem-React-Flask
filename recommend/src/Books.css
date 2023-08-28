@@ -1,0 +1,55 @@
+html {
+    margin: 0;
+    margin-top: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    font-size: 62.5% /* 1rem = 10px */
+  }
+  
+  /* .main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0.5rem;
+    padding: 0 14rem;
+    padding-top: 1.8rem;
+    border-radius: 5px;
+    row-gap: 1.6rem;
+    padding-bottom: 8rem;
+  }
+   */
+  .home {
+    background-image: linear-gradient(to bottom right, #00C0FF, #4218B8);
+    min-height: 100%;
+  }
+  .recommended-books-title{
+    font-size: 4rem;
+    color: #eee;
+    padding: .2rem 1.4rem;
+  }
+  /* @media (max-width: 700px) {
+    .main {
+      display: grid;
+      grid-template-columns: 1fr;
+      padding: 0 5rem;
+      place-items: center;
+      padding-top: 1.8rem;
+      border-radius: 5px;
+      row-gap: 1.6rem;
+      padding-bottom: 8rem;
+    }
+    
+  }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .main {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding: 0 5rem;
+      place-items: center;
+      padding-top: 1.8rem;
+      border-radius: 5px;
+      row-gap: 1.6rem;
+      padding-bottom: 8rem;
+    }
+  } */

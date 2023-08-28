@@ -1,0 +1,115 @@
+.card-main{
+    height: 50rem;
+    width: 100%;
+    /* background-color: black; */
+    background: linear-gradient(to bottom, #000000, #003366, #006699, #00cc99);
+
+    color: white;
+    margin-top: 2rem;
+}
+.image-book {
+    height: 100%;
+    width: 40%;
+    display: grid;
+    place-items: center;
+}
+.image-book img{
+    height: 40rem;
+    width: 30rem;
+    object-fit: cover;
+    border-radius: 1.2rem;
+    box-shadow: 7px 6px 5px rgba(255,255,255,0.3);
+}
+.imageandinfo{ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    /* gap: 1.3rem; */
+}
+.title-big{
+    font-size: 4rem;
+    width: 85%;
+}
+.author-big{
+    font-size: 2rem;
+}
+.votes-big,.rating-big,.desc-big{
+    font-size: 1.7rem;
+}
+.desc-big{
+    width: 60%;
+}
+.desc-big-theory{
+    /* padding: 3rem; */
+    width: 90%;
+    line-height: 1.8;
+}
+@media (max-width: 700px) {
+    .card-main{
+        height: 100vh;
+        width: 100%;
+        /* background-color: black; */
+        background: linear-gradient(to bottom, #000000, #003366, #006699, #00cc99);
+    
+        color: white;
+        margin-top: 2rem;
+    }
+    .imageandinfo{ 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        /* gap: 1.3rem; */
+    }
+    .image-book {
+        height: 28rem;
+        width: 60%;
+        /* height: 20rem; */
+        /* display: grid;
+        place-items: center; */
+    }
+    .image-book img{
+        height: 25rem;
+        width: 15rem;
+        object-fit: cover;
+        border-radius: 1.2rem;
+        box-shadow: 7px 6px 5px rgba(255,255,255,0.3);
+    }
+    .desc-big{
+        display: flex;
+        flex-direction: column;
+        /* width: 50%; */
+        align-items: center;
+        justify-content: center;  
+ }
+    .title-big{
+     display: inline-block;
+            width: 90%;
+     font-size: 2rem;
+    }
+    .paras{
+        display: flex;
+        gap: 1rem;
+        justify-items: center;
+        align-items: center;
+        width: 100%;
+    }
+    .author-big{
+        display: grid;
+        font-size: 1.2rem;
+    }
+    .votes-big,.rating-big,.desc-big{
+        font-size: 1.2rem;
+    }
+    .desc-big-theory{
+        /* width: ; */
+        padding-left: 4rem;
+        line-height: 1.8;
+        width: 80%;
+
+    }
+  }
